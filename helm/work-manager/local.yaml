@@ -19,11 +19,11 @@ env:
   DB_CONNECTION_URL: "jdbc:postgresql://work-manager-postgres:5432/local-work-manager-db"
   DB_USERNAME: "root"
   DB_PASSWORD: "root"
-  GCP_PROJECT_ID: "cwb06-dev"
+  GCP_PROJECT_ID: "cwb06-dev-7717"
   VERTEX_AI_LOCATION: "us-west1"
   CERBOS_URI: "127.0.0.1:3592" #"unix:/sock/cerbos.sock"
-  SELF_SIGN_PUBLIC_KEY: "${sm://projects/cwb06-dev/secrets/cwb06-self-signed-token-public-key/versions/latest}"
-  SELF_SIGN_PRIVATE_KEY: "${sm://projects/cwb06-dev/secrets/cwb06-self-signed-token-private-key/versions/latest}"
+  SELF_SIGN_PUBLIC_KEY: "${sm://projects/cwb06-dev-7717/secrets/cwb06-self-signed-token-public-key/versions/latest}"
+  SELF_SIGN_PRIVATE_KEY: "${sm://projects/cwb06-dev-7717/secrets/cwb06-self-signed-token-private-key/versions/latest}"
   USER_MANAGEMENT_BASE_URL: "http://user-management/um"
   TOKEN_PRIVATE_KEY_SECRET: "cwb06-self-signed-token-private-key"
   TOKEN_ISSUER: "cwb06"
@@ -35,4 +35,4 @@ env:
   PUBSUB_EMULATOR_HOST: "pubsub-emulator-service:8085" # set actual "host:port" to enable or false to disable
   PUBSUB_EMULATOR_ENABLED: true # set to true to enable emulator
   # cwb06-events publisher topics separated by comma
-  PUBLISHER_TOPICS: projects/cwb06-dev/topics/DOCUMENT_PROCESSING_INITIATION,projects/cwb06-dev/topics/APPLICATION_ROLE_REPORTING,projects/cwb06-dev/topics/NOTIFICATION_REQUESTS,projects/cwb06-dev/topics/AUDIT_EVENTS_RECORDING
+  PUBLISHER_TOPICS: projects/cwb06-dev-7717/topics/DOCUMENT_PROCESSING_INITIATION,projects/cwb06-dev-7717/topics/APPLICATION_ROLE_REPORTING,projects/cwb06-dev-7717/topics/NOTIFICATION_REQUESTS,projects/cwb06-dev-7717/topics/AUDIT_EVENTS_RECORDING
